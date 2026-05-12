@@ -1,5 +1,5 @@
 // ===== GANTI URL INI SETELAH BACKEND DIDEPLOY KE CLOUD RUN =====
-const API_URL = 'https://notes-backend-ghglkfqyja-uc.a.run.app';
+const API_URL = 'https://notes-backend-720084965883.us-central1.run.app';
 // ================================================================
 
 const notesList = document.getElementById('notesList');

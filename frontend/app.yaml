@@ -1,4 +1,5 @@
 runtime: python312
+service: notes-123230181
 
 handlers:
   - url: /(.+\.(css|js|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf))

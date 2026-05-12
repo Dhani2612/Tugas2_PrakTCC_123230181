@@ -1,0 +1,23 @@
+### Get All Notes
+GET https://notes-backend-720084965883.us-central1.run.app/notes
+
+### Create Note
+POST https://notes-backend-720084965883.us-central1.run.app/notes
+Content-Type: application/json
+
+{
+    "judul": "Tes dari API Cloud Run",
+    "isi": "Ini adalah isi catatan dari pengujian REST Client ke server Google Cloud"
+}
+
+### Update/Edit Note
+PUT https://notes-backend-720084965883.us-central1.run.app/notes/1
+Content-Type: application/json
+
+{
+    "judul": "Tes Update API",
+    "isi": "Isi catatan ini telah diubah melalui pengujian REST Client"
+}
+
+### Delete Note
+DELETE https://notes-backend-720084965883.us-central1.run.app/notes/1

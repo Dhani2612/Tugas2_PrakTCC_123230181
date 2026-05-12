@@ -1,0 +1,10 @@
+runtime: python312
+
+handlers:
+  - url: /(.+\.(css|js|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf))
+    static_files: \1
+    upload: .+\.(css|js|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf)
+
+  - url: /.*
+    static_files: index.html
+    upload: index.html

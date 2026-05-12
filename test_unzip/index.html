@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Notes Fullstack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Cloud Notes</h1>
+
+        <div class="card">
+            <h3>Tambah Catatan Baru</h3>
+            <input type="text" id="judul" placeholder="Judul Catatan..." required>
+            <textarea id="isi" placeholder="Isi catatan Anda..." required></textarea>
+            <button onclick="addNote()">Simpan Catatan</button>
+        </div>
+
+        <hr>
+
+        <div id="editArea" class="card" style="display:none; border: 2px solid #007bff;">
+            <h3>Edit Catatan</h3>
+            <input type="hidden" id="editId">
+            <input type="text" id="editJudul">
+            <textarea id="editIsi"></textarea>
+            <button onclick="updateNote()" style="background-color: #007bff;">Update Catatan</button>
+            <button onclick="hideEdit()" style="background-color: #6c757d; margin-top: 5px;">Batal</button>
+        </div>
+
+        <div id="notesList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
